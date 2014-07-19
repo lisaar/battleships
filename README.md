@@ -11,6 +11,14 @@ Once a ship has been hit across it's entire length, it is then classified as sun
 ``````
 
 ### CRC
+####Ships
+| Responsibility     | Collaborators 					 |
+| ------------------ | --------------------------------- |
+| Can be placed on | grid |
+| Receives hits from | cell |
+| Knows its location on | grid |
+
+
 ####Grid
 | Responsibility     | Collaborators 					 |
 | ------------------ | --------------------------------- |
@@ -38,12 +46,7 @@ Once a ship has been hit across it's entire length, it is then classified as sun
 | Looks into his board to see which ships are left| Ships/grid
 
 
-####Ships
-| Responsibility     | Collaborators 					 |
-| ------------------ | --------------------------------- |
-| Can be placed on | grid |
-| Receives hits from | cell |
-| Knows its location on | grid |
+
 
 
 ####Game
