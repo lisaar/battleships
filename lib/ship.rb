@@ -13,7 +13,7 @@ class Ship
 		@coordinates.count
 	end
 
-	def shot_at(coordinate)
+	def shoot_at(coordinate)
 		@hits << coordinate
 		self
 	end

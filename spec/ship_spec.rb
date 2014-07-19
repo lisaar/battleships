@@ -15,7 +15,7 @@ describe Ship do
 	end
 
 	it 'has hits when ship is shot at a certain coordinate' do
-		expect(ship.shot_at(:A1)).to have_hits
+		expect(ship.shoot_at(:A1)).to have_hits
 	end
 
 	it 'cannot be sunk first initalized' do
@@ -23,8 +23,8 @@ describe Ship do
 	end
 
 	it 'can be sunk when all ships coordinates have been hit' do
-		ship.shot_at(:A1)
-		ship.shot_at(:A2)
+		ship.shoot_at(:A1)
+		ship.shoot_at(:A2)
 		expect(ship).to be_sunk
 	end
 	
